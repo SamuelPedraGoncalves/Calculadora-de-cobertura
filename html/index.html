@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IS básica</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script type="text/javascript" src="../script/index.js"></script>
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+        <h1>Calculadora de IS (Residencial)</h1>
+        <div class="mqd">
+          <p>
+            Informe o metro quadrado
+            <input class="metquad" type="text" name="resultado" size="10" />
+          </p>
+        </div>
+        <div class="regiao">
+          <form>
+            <label>Escolha a Região:</label>
+            <select name="regiao" id="select-regiao">
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+              <option value="DR">Demais Regiões</option>
+            </select>
+          </form>
+        </div>
+        <div class="acabamento">
+          <form>
+            <label>Escolha o tipo de acabamento:</label>
+            <select name="acabamento" id="select-acabamento">
+              <option value="luxo">Luxo</option>
+              <option value="medio">Médio</option>
+              <option value="basico">Básico</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="resultado">
+          <button class="btn" onclick="calcular()">Calcular</button>
+          <input class="res" id="resultado" type="text" name="resultado" size="20" readonly>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
